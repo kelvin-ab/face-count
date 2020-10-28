@@ -1,0 +1,15 @@
+version: '3'
+services:
+  socket:
+    build:
+      context: "socket/"
+      dockerfile: "Dockerfile"
+    network_mode: "host"
+
+  source:
+    build:
+      context: "source/"
+      dockerfile: "Dockerfile"
+    volumes:
+      - "./video/:/usr/app/video"
+    network_mode: "host"

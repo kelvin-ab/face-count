@@ -1,0 +1,5 @@
+numpy
+mxnet
+opencv-python
+websocket-client
+easydict
